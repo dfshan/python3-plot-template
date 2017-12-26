@@ -24,3 +24,4 @@ font.sans-serif : Gill Sans
 font.size : 10.0
 legend.loc : best
 legend.fontsize : 15
+errorbar.capsize : 6
