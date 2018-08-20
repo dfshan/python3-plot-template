@@ -49,8 +49,11 @@ def main():
         names=('x', 'y'),
         usecols=(0, 1),
     )
+    fig, ax = plt.subplots()
     #plt.style.use('paper')
-    df.plot(x='x', y='y', **styles[0])
+    ax.plot(df['x'], df['y'], **styles[0])
+    plt.xlabel('x val')
+    plt.ylabel('y val')
     plt.tight_layout()
     plt.show()
 

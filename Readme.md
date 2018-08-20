@@ -4,7 +4,7 @@ This is a template about reading data with `pandas` and plotting data with `matp
 # Requirements
 
 * python3
-* tkinter (`python34-tkinter` package for Centos 7, `python3-tk` package for Ubuntu)
+* tkinter (`python34-tkinter` package for Centos 7, `python3-tk` package for Ubuntu, `python-pmw` package for Arch Linux)
 * Other packages in `requirements.txt`
 
 ## Install requirements in Centos 7
