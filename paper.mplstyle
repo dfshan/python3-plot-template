@@ -1,5 +1,6 @@
 # https://matplotlib.org/users/customizing.html
 figure.figsize : 8, 4
+figure.autolayout : True
 text.usetex : True
 lines.linewidth : 3
 lines.markersize : 15
@@ -8,20 +9,23 @@ lines.dash_joinstyle : round
 lines.dash_capstyle : round
 lines.solid_joinstyle : round
 lines.solid_capstyle : round
-axes.grid : True
 grid.color : 808080
 grid.linestyle : dotted
 grid.linewidth : 2
+axes.grid : True
+axes.axisbelow: True
 axes.edgecolor : 808080
 axes.linewidth: 2
 axes.labelcolor: 404040
-axes.titlesize : 24
+axes.titlesize : 20
 axes.labelsize : 20
-xtick.labelsize : 16
-ytick.labelsize : 16
+xtick.labelsize : 20
+xtick.color: 808080
+ytick.labelsize : 20
+ytick.color: 808080
 font.family : sans-serif
-font.sans-serif : Gill Sans
-font.size : 10.0
+#font.sans-serif : Gill Sans
+font.size : 15.0
 legend.loc : best
 legend.fontsize : 15
 errorbar.capsize : 6
