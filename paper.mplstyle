@@ -1,5 +1,5 @@
 # https://matplotlib.org/users/customizing.html
-figure.figsize : 8, 4
+figure.figsize : 8, 6
 figure.autolayout : True
 text.usetex : True
 lines.linewidth : 3
@@ -17,15 +17,15 @@ axes.axisbelow: True
 axes.edgecolor : 808080
 axes.linewidth: 2
 axes.labelcolor: 404040
-axes.titlesize : 20
-axes.labelsize : 20
-xtick.labelsize : 20
+axes.titlesize : 30
+axes.labelsize : 30
+xtick.labelsize : 30
 xtick.color: 808080
-ytick.labelsize : 20
+ytick.labelsize : 30
 ytick.color: 808080
 font.family : sans-serif
 #font.sans-serif : Gill Sans
-font.size : 15.0
+font.size : 25
 legend.loc : best
-legend.fontsize : 15
+legend.fontsize : 25
 errorbar.capsize : 6
