@@ -16,13 +16,13 @@ axes.grid : True
 axes.axisbelow: True
 axes.edgecolor : 808080
 axes.linewidth: 2
-axes.labelcolor: 404040
+axes.labelcolor: 505050
 axes.titlesize : 30
 axes.labelsize : 30
 xtick.labelsize : 30
-xtick.color: 808080
+xtick.color: 505050
 ytick.labelsize : 30
-ytick.color: 808080
+ytick.color: 505050
 font.family : sans-serif
 #font.sans-serif : Gill Sans
 font.size : 25
