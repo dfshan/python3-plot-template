@@ -47,6 +47,22 @@ styles = [
 ]
 
 
+def plot_cdf(data, axis, **kwargs):
+    ''' Plot CDF (Cumulative Distribution Function)
+    Args:
+        data: A list of data for plotting CDF
+        axis: A matplotlib.axes.Axes object
+        kwargs: Other arguments for matplotlib.axes.Axes.hist
+    '''
+    n, bins, patches = axis.hist(
+        data, density=1, cumulative=True,
+        histtype='step', bins=len(data),
+        **kwargs,
+    )
+    # delete the vertical line in the right
+    patches[0].set_xy(patches[0].get_xy()[:-1])
+
+
 def example_cdf(fname=None):
     if fname is None:
         data = np.geomspace(1, 100, 10000)
@@ -59,17 +75,12 @@ def example_cdf(fname=None):
         'ls': '-',
         'linewidth': 3,
     }
-    n, bins, patches = plt.hist(
-        data, density=1, cumulative=True,
-        histtype='step', bins=len(data),
-        label='line1',
-        **hist_style,
-    )
-    patches[0].set_xy(patches[0].get_xy()[:-1])
+    plot_cdf(data, ax, label='line1', **hist_style)
     # set legend to line
     handles, labels = ax.get_legend_handles_labels()
     new_handles = [matplotlib.lines.Line2D([], [], c=h.get_edgecolor())
                    for h in handles]
+    # set grid styles
     ax.minorticks_on()
     ax.grid(axis='both', which='major', ls='dotted', linewidth=2, alpha=0.9)
     ax.grid(axis='both', which='minor', ls='dotted', linewidth=1.5, alpha=0.5)
