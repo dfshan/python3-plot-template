@@ -1,7 +1,9 @@
 # https://matplotlib.org/users/customizing.html
 figure.figsize : 8, 6
 figure.autolayout : True
+
 text.usetex : True
+
 lines.linewidth : 3
 lines.markersize : 15
 lines.markeredgewidth : 3.0
@@ -9,9 +11,18 @@ lines.dash_joinstyle : round
 lines.dash_capstyle : round
 lines.solid_joinstyle : round
 lines.solid_capstyle : round
+
+##### PATCHES (useful for plotting CDF)
+## Patches are graphical objects that fill 2D space, like polygons or
+## circles.  See
+## http://matplotlib.org/api/artist_api.html#module-matplotlib.patches
+## information on patch properties
+patch.linewidth : 3        ## edge width in points.
+
 grid.color : 808080
 grid.linestyle : dotted
 grid.linewidth : 2
+
 axes.grid : True
 axes.axisbelow: True
 axes.edgecolor : 808080
@@ -19,13 +30,17 @@ axes.linewidth: 2
 axes.labelcolor: 505050
 axes.titlesize : 30
 axes.labelsize : 30
+
 xtick.labelsize : 30
 xtick.color: 505050
 ytick.labelsize : 30
 ytick.color: 505050
+
 font.family : sans-serif
 #font.sans-serif : Gill Sans
 font.size : 25
+
 legend.loc : best
 legend.fontsize : 25
+
 errorbar.capsize : 6

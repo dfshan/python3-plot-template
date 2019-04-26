@@ -70,11 +70,15 @@ def example_cdf(fname=None):
         data = np.loadtxt(fname)
     plt.style.use('paper')
     fig, ax = plt.subplots()
-    hist_style = {
-        'color': '#a00000',
-        'ls': '-',
-        'linewidth': 3,
-    }
+    hist_style = []
+    for style in styles:
+        # patch styles
+        hist_style = {
+            'color': '#a00000',
+            'ls': '-',
+            'capstyle': 'round',
+            'joinstyle': 'round',
+        }
     plot_cdf(data, ax, label='line1', **hist_style)
     # set legend to line
     handles, labels = ax.get_legend_handles_labels()
